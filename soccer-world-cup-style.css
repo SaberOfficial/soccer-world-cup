@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+/* ---------------Common Styles------------------*/
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+/* ----------------Top Banner Styles Here--------------------- */
+
+.top-banner {
+    background-color: #49BCE3;
+    color: rgba(0, 0, 0, 0.911);
+    display: flex;
+    width: 50;
+    padding: 0 120px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.banner-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.viewall-button {
+    background-color: #c70e0e;
+    color: whitesmoke;
+    padding: 12px;
+    font-weight: 500;
+    max-width: 150px;
+    border: none;
+    border-radius: 5px;
+}
+
+.viewall-button:hover {
+    background: yellow;
+    color: black;
+}
+
+.viewall-button i {
+    margin-left: 10px;
+}
+
+.banner-content {
+    width: 60%;
+}
+
+.banner-content p {
+    margin: 20px 0px;
+}
+
+header:hover img {
+    transform: translateX(70px) scale(110%);
+}
+
+.banner-image {
+    width: 40%;
+    padding-right: 50px;
+}
+
+/* --------------------------------Top Banner END ---------------------  */
+
+/* --------------------------------BLOG & SIDE MENU BAR Styles------------------------------------------- */
+
+.blog-section {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    column-gap: 20px;
+    padding-top: 50px;
+}
+
+/* ---------------------------------SIDE MENUBAR STYLES--------------------------------------------- */
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #161616;
+    padding: 15px;
+    border-radius: 10px;
+    height: fit-content;
+}
+
+.sidebar a {
+    color: #161616;
+    background: #fff;
+    padding: 15px 10px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.sidebar .selected {
+    background-color: #DD0000;
+    color: #fff;
+}
+
+.sidebar a:hover {
+    background-color: yellow;
+    color: black;
+}
+
+.sidebar .selected {
+    border: none;
+}
+
+/* ---------------SIDEBAR MENU ENDs-------------------------  */
+.blog-post {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 15px;
+    column-gap: 15px;
+}
+
+/*-------------------- Individual Blog Post--------------------  */
+.blog-thumbnail {
+    border-radius: 10px;
+    border: 1px solid #ebe7e7;
+    box-shadow: 5px 5px 10px #d8d5d5;
+}
+
+.blog-info {
+    padding: 15px
+}
+
+.blog-anchor {
+    border: 1px solid #161616;
+    color: #161616;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.blog-info h3 {
+    margin: 10px 0px;
+    font-weight: 400;
+}
+
+.blog-info a {
+    color: #161616;
+
+}
+
+.blog-updates {
+    margin-top: 15px;
+    font-weight: 500;
+}
+
+.blog-updates span {
+    margin-right: 20px;
+}
+
+/*------------------- FOOTER Styles --------------------- */
+
+footer {
+    background-color: #161616;
+    margin-top: 30px;
+    text-align: center;
+    color: #fff;
+    overflow: hidden;
+
+}
+
+.footer-elements {
+    margin: 50px 0px;
+}
+
+/* ----------------SOCIAL MEDIA Icons Styles ------------- */
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-media {
+    margin: 0px 10px;
+    font-size: 30px;
+}
+
+footer a:hover {
+    color: yellow;
+}
+
+/*---------------------- FOOTER MENU Styles --------------------------- */
+
+footer a {
+    color: whitesmoke;
+    font-weight: 400;
+}
+
+ul {
+    list-style: none;
+    margin: 20 auto;
+    text-align: center;
+}
+
+li {
+    display: inline-block;
+    margin: 20px;
+}
+
+.footer-menu {
+    border-top: #242323 1px solid;
+}
+
+/* ---------------------------- FOOTER Styles ENDs----------------------- */
+
+/* ---------------UPCOMING MATCH Days Styles------------------- */
+.upcoming-match {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 30px;
+    border: 1px solid rgb(204, 201, 201);
+    border-radius: 5px;
+}
+
+.upcoming-match p {
+    color: rgb(114, 111, 111);
+}
+
+.country-flag {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 15px;
+    align-items: center;
+}
+
+/*------------------------------------------------------
+                             Trying to apply Media Query
+----------------------------------------------------- */
+/* Mobile Devices */
+@media only screen and(max-width:688px) {
+    .container {
+        width: 100%
+    }
+
+    .top-banner {
+        color: aqua;
+    }
+
+    /*-----------------------------------------------------------------------------------------------------------------
+    Tried to apply Media Query for Mobile Devices but I am Sorry I failed. I did not understand this topics along with Debug calculation.
+
+    This is a very tough job for a beginner like me at this short time.  
+
+    I am also sorry for that I could not keep my patience till last. I spent almost 15 hours to do this assignment. I giving up media query for now. Hope i will be able to learn it in future.
+    ---------------------------------------------------------------------------------------------------------------------*/
